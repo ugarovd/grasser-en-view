@@ -1,0 +1,794 @@
+
+<html lang="ru">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../vendors/noUiSlider/nouislider.min.css"/>
+  <link rel="stylesheet" href="../vendors/swiper/swiper-bundle.css"/>
+  <link rel="stylesheet" href="vendors/bootstrap-modal/bootstrap-modal.min.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+  <title>UI KIT
+  </title>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <svg class="icon _type_logo">
+            <use xlink:href="assets/icons/default/sprite.svg#logo"></use>
+          </svg>
+          <div class="header__top-items"><a class="header__button _tab-flex" href="javascript:">
+              <svg class="icon _theme_grey _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#search"></use>
+              </svg></a><a class="header__button _tab-hidden" href="javascript:">
+              <svg class="icon _theme_grey _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#word"></use>
+              </svg><span class="header__nav-title">RU</span></a>
+            <button class="header__button _tab-hidden">
+              <svg class="icon _theme_grey _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#email"></use>
+              </svg><span class="header__nav-title">Contact us</span>
+            </button>
+            <div class="header__button-container">
+              <div class="header__icon-container">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#account"></use>
+                </svg>
+              </div><a class="header__button" data-bs-toggle="modal" data-bs-target="#login">
+                <div class="row-col"><span class="header__nav-title _tab-hidden">Login</span></div></a><span class="header__nav-split">/</span><a class="header__button" data-bs-toggle="modal" data-bs-target="#Register">
+                <div class="row-col"><span class="header__nav-title _tab-hidden">Register</span></div></a>
+            </div><a class="header__button" href="javascript:">
+              <div class="header__icon-container">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#shop"></use>
+                </svg>
+              </div>
+              <div class="row-col"><span class="header__nav-title _tab-hidden">Cart</span></div></a>
+            <button class="header__burger _tab-flex">
+              <svg class="icon _theme_grey _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="header__content">
+          <div class="header__menu">
+            <svg class="icon _theme_grey _size_sm header__close-icon">
+              <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+            </svg>
+            <nav class="header__nav"><a class="header__nav-title" href="javascript:">Patterns</a><a class="header__nav-title" href="javascript:">Video tutorials</a><a class="header__nav-title" href="javascript:">Blog</a><a class="header__nav-title" href="javascript:">Feedback</a><a class="header__nav-title" href="javascript:">FAQ</a><a class="header__nav-title" href="javascript:">About us</a><a class="header__nav-title" href="javascript:">Contacts</a></nav>
+            <div class="header__menu-links _tab-flex"><a class="header__button _type_mob-menu" href="javascript:">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#account"></use>
+                </svg><span class="header__nav-title">Login / register</span></a><a class="header__button _type_mob-menu" href="javascript:">
+                <div class="header__icon-container">
+                  <svg class="icon _theme_grey _size_sm">
+                    <use xlink:href="assets/icons/default/sprite.svg#shop"></use>
+                  </svg>
+                </div>
+                <div class="row-col"><span class="header__nav-title">Cart</span></div></a>
+              <button class="header__button _type_mob-menu" type="button">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#email"></use>
+                </svg>
+                <div class="header__nav-title">Contact us</div>
+              </button><a class="header__button _type_mob-menu" href="javascript:">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#word"></use>
+                </svg><span class="header__nav-title">RU</span></a>
+            </div>
+          </div>
+          <form class="input _type_search header__search _tab-hidden">
+            <div class="input__field">
+              <button class="input__search-button" type="button">
+                <svg class="icon _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <input class="input__field-input" type="text" placeholder="What do you search"/>
+              <button class="input__cross-button" type="button">
+                <svg class="icon _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="input__submit-button" type="button">
+              <svg class="icon _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#arrow-right-white"></use>
+              </svg>
+            </button>
+            <div class="input__dropdown"><a class="input__result" href="#">Patterns of women’s pinafores</a><a class="input__result" href="#">Plus size sewing patterns</a><a class="input__result" href="#">All patterns</a><a class="input__result" href="#">Patterns</a><a class="input__result" href="#">Clothing sewing patterns</a><a class="input__result" href="#">Free patterns</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="modal fade" tabindex="-1" id="Register">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><span class="modal-title">Register</span>
+            <button class="modal-close-btn" data-bs-dismiss="modal">
+              <svg class="icon _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-form">
+              <div class="input">
+                <label class="input__label">Name*</label>
+                <input class="input__field" type="Text" placeholder="" data-mask="text" required="required"/>
+              </div>
+              <div class="input">
+                <label class="input__label">Surname*</label>
+                <input class="input__field" type="Text" placeholder="" data-mask="text" required="required"/>
+              </div>
+              <div class="input">
+                <label class="input__label">Day of birth*</label>
+                <input class="input__field" type="text" data-mask="date" required="required"/>
+              </div>
+              <div class="input">
+                <label class="input__label">E-mail</label>
+                <input class="input__field" type="text" placeholder="" data-mask="email" required="required"/>
+              </div>
+              <div class="input" data-type="password">
+                <div class="input__top">
+                  <label class="input__label">Password*</label>
+                </div>
+                <div class="input__field">
+                  <input class="input__field-input" type="password" placeholder="Password" required="required"/>
+                  <button class="input__password-toggler" type="button">
+                    <svg class="icon _size_sm input__password-icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#password-unlock"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="input" data-type="password">
+                <div class="input__top">
+                  <label class="input__label">Repeat password*</label>
+                </div>
+                <div class="input__field">
+                  <input class="input__field-input" type="password" placeholder="Password" required="required"/>
+                  <button class="input__password-toggler" type="button">
+                    <svg class="icon _size_sm input__password-icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#password-unlock"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="register checkbox" id="regCheckbox" value="register checkbox"/>
+                <label for="regCheckbox">I want to receive the newsletter</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="button _theme_black modal-footer-button" type="button"><span class="button__text">Register</span>
+            </button><span class="modal-footer-subtext">By creating an account, you agree to Conditions of Use and Privacy Policy.</span><span class="modal-footer-text">Already have an account?<a href="javascipt:" data-bs-toggle="modal" data-bs-target="#login">Log in.</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="login">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><span class="modal-title">log in</span>
+            <button class="modal-close-btn" data-bs-dismiss="modal">
+              <svg class="icon _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-form">
+              <div class="input">
+                <label class="input__label">Login*</label>
+                <input class="input__field" type="Text" placeholder="" required="required"/>
+              </div>
+              <div class="input" data-type="password">
+                <div class="input__top">
+                  <label class="input__label">Password*</label><span class="input__link" href="javascript:" data-bs-toggle="modal" data-bs-target="#Forgot-password">Forgot password?</span>
+                </div>
+                <div class="input__field">
+                  <input class="input__field-input" type="password" placeholder="Password" required="required"/>
+                  <button class="input__password-toggler" type="button">
+                    <svg class="icon _size_sm input__password-icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#password-unlock"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="button _theme_black modal-footer-button" type="button"><span class="button__text">Log in</span>
+            </button><span class="modal-footer-text">Don’t have an account?<a href="javascipt:" data-bs-toggle="modal" data-bs-target="#Register">Register</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="Forgot-password">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><span class="modal-title">Forgot password?</span>
+            <button class="modal-close-btn" data-bs-dismiss="modal">
+              <svg class="icon _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-form">
+              <div class="input">
+                <label class="input__label">E-mail</label>
+                <input class="input__field" type="text" placeholder="" data-mask="email" required="required"/>
+              </div><span class="modal-subtext">The password will be sent to your email</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="button _theme_black modal-footer-button" type="button"><span class="button__text">Send</span>
+            </button><span class="modal-footer-text">I remember password.<a href="javascipt:" data-bs-toggle="modal" data-bs-target="#login">Log in.</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="page-ui">
+        <div class="container">
+          <div class="row-col _gap_xxxl">
+            <div class="row-flex _space_auto">
+              <h1 class="page-ui__title">UI KIT</h1><a class="page-ui__back-link" href="index.html">В меню</a>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Кнопки</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center">
+                  <button class="button _theme_black" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <button class="button _theme_black _size_md" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <button class="button _theme_black _size_sm" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <button class="button _theme_light-red" type="button"><span class="button__text">Text</span>
+                  </button>
+                  <button class="button _theme_light-grey" type="button"><span class="button__text">Text</span>
+                  </button>
+                </div>
+                <div class="row-flex _gap_md _center">
+                  <button class="button _theme_red" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <button class="button _theme_red _size_md" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <button class="button _theme_red _size_sm" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <button class="button _theme_light-red" type="button">
+                    <svg class="icon _size_sm button__icon-pin">
+                      <use xlink:href="assets/icons/default/sprite.svg#pin"></use>
+                    </svg><span class="button__text">Text</span>
+                  </button>
+                  <button class="button _theme_light-grey" type="button">
+                    <svg class="icon _size_sm button__icon-pin">
+                      <use xlink:href="assets/icons/default/sprite.svg#pin"></use>
+                    </svg><span class="button__text">Text</span>
+                  </button>
+                </div>
+                <div class="row-flex _gap_md _center">
+                  <button class="button _theme_grey" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <button class="button _theme_grey _size_md" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <button class="button _theme_grey _size_sm" type="button"><span class="button__text">Subscribe</span>
+                  </button>
+                  <div class="button-share"><span class="button-share__text">Share</span>
+                    <svg class="icon _size_sm button-share__icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#share-button"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">like</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap">
+                  <button class="like" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Лейблы</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap">
+                  <div class="label _size_lg _type_default">Текст</div>
+                  <div class="label _size_sm _type_default">Текст</div>
+                  <div class="label _size_lg _theme_red">- 50 %</div>
+                  <div class="label _size_sm _theme_red">- 50 %</div>
+                  <div class="label _size_lg _theme_white">SALE</div>
+                  <div class="label _size_sm _theme_white">SALE</div>
+                  <div class="label _size_lg _square _theme_red">
+                    <svg class="icon _size_sm">
+                      <use xlink:href="assets/icons/default/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <div class="label _size_sm _square _theme_red">
+                    <svg class="icon _size_xs">
+                      <use xlink:href="assets/icons/default/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <div class="label _type_status">
+                    <svg class="icon _size_xs">
+                      <use xlink:href="assets/icons/default/sprite.svg#dots"></use>
+                    </svg>Waiting for pay
+                  </div>
+                  <div class="label _type_status _size_sm">
+                    <svg class="icon _size_xs">
+                      <use xlink:href="assets/icons/default/sprite.svg#dots"></use>
+                    </svg>Waiting for pay
+                  </div>
+                  <div class="label _type_status">
+                    <svg class="icon _size_xs">
+                      <use xlink:href="assets/icons/default/sprite.svg#check"></use>
+                    </svg>Order paid, download available
+                  </div>
+                  <div class="label _type_status _size_sm">
+                    <svg class="icon _size_xs">
+                      <use xlink:href="assets/icons/default/sprite.svg#check"></use>
+                    </svg>Order paid, download available
+                  </div>
+                </div>
+              </div>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center">
+                  <div class="count _theme_red">1</div>
+                  <div class="count _theme_black">1</div>
+                  <div class="count">1</div>
+                  <div class="count _theme_red _size_md">1</div>
+                  <div class="count _theme_black _size_md">1</div>
+                  <div class="count _size_md">1</div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Sort</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap">
+                  <button class="sort" type="button">
+                    <svg class="icon sort__icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#down"></use>
+                    </svg><span class="sort__title">Sort by</span>
+                  </button>
+                  <button class="sort _type_default" type="button">
+                    <svg class="icon sort__icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#down"></use>
+                    </svg><span class="sort__title">Sort by</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Табы</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap">
+                  <div class="tab">Text</div>
+                  <div class="tab _type_param">Text</div>
+                  <div class="tab _type_param disabled">Text</div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Пагинация</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap _space_auto">
+                  <div class="pagination">
+                    <div class="pagination__container">
+                      <button class="button _theme_light-black" type="button"><span class="button__text">Previous</span>
+                      </button>
+                      <div class="pagination__counter">
+                        <button class="button _theme_light-black" type="button"><span class="button__text">1</span>
+                        </button>
+                        <button class="button _theme_light-black" type="button"><span class="button__text">2</span>
+                        </button>
+                        <button class="button _theme_light-black active" type="button"><span class="button__text">3</span>
+                        </button>
+                        <button class="button _theme_light-black" type="button"><span class="button__text">4</span>
+                        </button>
+                        <button class="button _theme_light-black" type="button"><span class="button__text">...</span>
+                        </button>
+                        <button class="button _theme_light-black" type="button"><span class="button__text">20</span>
+                        </button>
+                      </div>
+                      <button class="button _theme_light-black" type="button"><span class="button__text">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">BreadCrumbs</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap">
+                  <nav class="breadcrumbs"><a class="breadcrumbs__link" href="#"><span>Page name</span>
+                      <svg class="icon breadcrumbs__icon">
+                        <use xlink:href="assets/icons/default/sprite.svg#arrow-right"></use>
+                      </svg></a><a class="breadcrumbs__link" href="#"><span>Page name</span>
+                      <svg class="icon breadcrumbs__icon">
+                        <use xlink:href="assets/icons/default/sprite.svg#arrow-right"></use>
+                      </svg></a><a class="breadcrumbs__link active" href="#">Page name</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Чекбокс</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox-1" value="checkbox"/>
+                    <label for="checkbox-1">Text</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox-2" value="checkbox" checked="checked"/>
+                    <label for="checkbox-2">Text</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox-3" value="checkbox" disabled="disabled"/>
+                    <label for="checkbox-3">Text</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox-4" value="checkbox" disabled="disabled" checked="checked"/>
+                    <label for="checkbox-4">Text</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Инпут "Добавить картинки"</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap _space_auto">
+                  <div class="input-images">
+                    <div class="input-images__top">
+                      <button class="button _theme_light-black input-images__button" type="button">
+                        <svg class="icon _size_sm button__icon-pin">
+                          <use xlink:href="assets/icons/default/sprite.svg#pin"></use>
+                        </svg><span class="button__text">Add images</span>
+                      </button>
+                      <input class="input-images__input" type="file" id="files" name="files" multiple="multiple"/>
+                      <button class="button _theme_light-red input-images__button-delete-all"><span class="button__text">Delete all</span></button>
+                    </div>
+                    <div class="swiper input-images__swiper">
+                      <div class="swiper-wrapper input-images__swiper-wrapper"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Инпуты</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _wrap _space_auto">
+                  <div class="input _width_sm">
+                    <label class="input__label">E-mail</label>
+                    <input class="input__field" type="text" placeholder="E-mail" data-mask="email"/>
+                  </div>
+                  <div class="input _width_sm">
+                    <label class="input__label">Text</label>
+                    <input class="input__field" type="Text" placeholder="text" data-mask="text"/>
+                  </div>
+                  <div class="input _width_sm">
+                    <label class="input__label">Everything</label>
+                    <input class="input__field" type="text" placeholder="Everything"/>
+                  </div>
+                  <div class="input _width_sm">
+                    <label class="input__label">Mobile Phone</label>
+                    <input class="input__field" type="text" placeholder="Mobile Phone" data-mask="mobile-phone"/>
+                  </div>
+                  <div class="input _width_sm">
+                    <label class="input__label">Number</label>
+                    <input class="input__field" type="text" placeholder="Number" data-mask="number"/>
+                  </div>
+                  <div class="input _width_sm">
+                    <label class="input__label">Date</label>
+                    <input class="input__field" type="text" data-mask="date"/>
+                  </div>
+                  <div class="input _width_sm" data-type="password">
+                    <div class="input__top">
+                      <label class="input__label">Password*</label><span class="input__link" href="javascript:" data-bs-toggle="modal" data-bs-target="#Forgot-password">Forgot password?</span>
+                    </div>
+                    <div class="input__field">
+                      <input class="input__field-input" type="password" placeholder="Password"/>
+                      <button class="input__password-toggler" type="button">
+                        <svg class="icon _size_sm input__password-icon">
+                          <use xlink:href="assets/icons/default/sprite.svg#password-unlock"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="input _width_sm _error">
+                    <label class="input__label">Error</label>
+                    <input class="input__field" type="text" value="test@ail.ru" placeholder="E-mail"/><span class="input__text">Help text</span>
+                  </div>
+                </div>
+                <div class="row-flex _gap_md _flex-start _space_auto">
+                  <form class="input _type_promo _width_sm">
+                    <input class="input__field" type="text" placeholder="Your promocode"/>
+                    <div class="input__applied-message">Promocode applied</div>
+                    <button class="input__submit-button" type="button">
+                      <svg class="icon _size_sm ">
+                        <use xlink:href="assets/icons/default/sprite.svg#arrow-right-white"></use>
+                      </svg>
+                    </button>
+                    <div class="input__applied-icon">
+                      <svg class="icon _size_sm _theme_white">
+                        <use xlink:href="assets/icons/default/sprite.svg#check"></use>
+                      </svg>
+                    </div><span class="input__text">Promocode doesn’t exist</span>
+                  </form>
+                  <form class="input _type_promo _width_sm _active _error">
+                    <input class="input__field" type="text" value="PROMO24" placeholder="Your promocode"/>
+                    <div class="input__applied-message">Promocode applied</div>
+                    <button class="input__submit-button" type="button">
+                      <svg class="icon _size_sm ">
+                        <use xlink:href="assets/icons/default/sprite.svg#arrow-right-white"></use>
+                      </svg>
+                    </button>
+                    <div class="input__applied-icon">
+                      <svg class="icon _size_sm _theme_white">
+                        <use xlink:href="assets/icons/default/sprite.svg#check"></use>
+                      </svg>
+                    </div><span class="input__text">Promocode doesn’t exist</span>
+                  </form>
+                  <form class="input _type_promo _width_sm _applied">
+                    <input class="input__field" type="text" placeholder="Your promocode"/>
+                    <div class="input__applied-message">Promocode applied</div>
+                    <button class="input__submit-button" type="button">
+                      <svg class="icon _size_sm ">
+                        <use xlink:href="assets/icons/default/sprite.svg#arrow-right-white"></use>
+                      </svg>
+                    </button>
+                    <div class="input__applied-icon">
+                      <svg class="icon _size_sm _theme_white">
+                        <use xlink:href="assets/icons/default/sprite.svg#check"></use>
+                      </svg>
+                    </div><span class="input__text">Promocode doesn’t exist</span>
+                  </form>
+                </div>
+                <div class="row-flex _gap_md _center">
+                  <form class="input _type_search _width_sm">
+                    <div class="input__field">
+                      <input class="input__field-input" type="text" placeholder="What do you search"/>
+                      <button class="input__cross-button" type="button">
+                        <svg class="icon _size_sm">
+                          <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="input__submit-button" type="button">
+                      <svg class="icon _size_sm">
+                        <use xlink:href="assets/icons/default/sprite.svg#arrow-right-white"></use>
+                      </svg>
+                    </button>
+                    <div class="input__dropdown"><a class="input__result" href="#">Patterns of women’s pinafores</a><a class="input__result" href="#">Plus size sewing patterns</a><a class="input__result" href="#">All patterns</a><a class="input__result" href="#">Patterns</a><a class="input__result" href="#">Clothing sewing patterns</a><a class="input__result" href="#">Free patterns</a>
+                    </div>
+                  </form>
+                </div>
+                <div class="row-flex _gap_md _center _wrap">
+                  <div class="input _type_textarea _width_sm">
+                    <label class="input__label">Textarea</label>
+                    <textarea class="input__field" placeholder="Add comment"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Каунтер</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _space_auto">
+                  <div class="counter" data-min="0" data-max="250">
+                    <div class="counter__container">
+                      <input class="counter__input _min" type="text" id="minInput"/>
+                      <input class="counter__input _max" type="text" id="maxInput"/>
+                    </div>
+                    <div class="counter__price" id="counter-1"></div>
+                  </div>
+                  <div class="counter" data-min="0" data-max="9990">
+                    <div class="counter__container">
+                      <input class="counter__input _min" type="text" id="minInput2"/>
+                      <input class="counter__input _max" type="text" id="maxInput2"/>
+                    </div>
+                    <div class="counter__price" id="counter-2"></div>
+                  </div>
+                  <div class="counter" data-min="2222" data-max="9999">
+                    <div class="counter__container">
+                      <input class="counter__input _min" type="text" id="minInput3"/>
+                      <input class="counter__input _max" type="text" id="maxInput3"/>
+                    </div>
+                    <div class="counter__price" id="counter-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Селект</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _space_auto">
+                  <div class="select">
+                    <div class="select__trigger"><span class="select__selected-option">Text</span>
+                      <svg class="icon _size_xs select__toggle-icon">
+                        <use xlink:href="assets/icons/default/sprite.svg#arrow-bottom"></use>
+                      </svg>
+                    </div>
+                    <div class="select__dropdown _hidden">
+                      <label class="select__dropdown-item" for="el1">Text1
+                        <input class="select__item" type="radio" id="el1" name="Name" value="Text1"/>
+                      </label>
+                      <label class="select__dropdown-item" for="el2">Text2
+                        <input class="select__item" type="radio" id="el2" name="Name" value="Text2"/>
+                      </label>
+                      <label class="select__dropdown-item" for="el3">Text3
+                        <input class="select__item" type="radio" id="el3" name="Name" value="Text3"/>
+                      </label>
+                      <label class="select__dropdown-item" for="el34">Text34
+                        <input class="select__item" type="radio" id="el34" name="Name" value="Text34"/>
+                      </label>
+                      <label class="select__dropdown-item" for="el344">Text344
+                        <input class="select__item" type="radio" id="el344" name="Name" value="Text344"/>
+                      </label>
+                      <label class="select__dropdown-item" for="el32">Text32
+                        <input class="select__item" type="radio" id="el32" name="Name" value="Text32"/>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="select  _type_check">
+                    <div class="select__trigger"><span class="select__selected-option">Text</span>
+                      <svg class="icon _size_xs select__toggle-icon">
+                        <use xlink:href="assets/icons/default/sprite.svg#arrow-bottom"></use>
+                      </svg>
+                    </div>
+                    <div class="select__dropdown _hidden">
+                      <label class="select__dropdown-item" for="el11">Text11
+                        <input class="select__item" type="radio" id="el11" name="Name1" value="Text11"/>
+                      </label>
+                      <label class="select__dropdown-item" for="el21">Text21
+                        <input class="select__item" type="radio" id="el21" name="Name1" value="Text21"/>
+                      </label>
+                      <label class="select__dropdown-item" for="el31">Text31
+                        <input class="select__item" type="radio" id="el31" name="Name1" value="Text31"/>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-col _gap_md">
+              <h2 class="page-ui__section-title">Аккордеон</h2>
+              <div class="row-col _gap_md">
+                <div class="row-flex _gap_md _center _space_auto">
+                  <ul class="accordion">
+                    <li class="accordion__item">
+                      <label class="accordion__button">
+                        <h3 class="accordion__subtitle">What size of template is suitable for me?</h3>
+                        <input class="accordion__checkbox" type="checkbox"/>
+                        <svg class="icon _size_sm">
+                          <use xlink:href="assets/icons/default/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </label>
+                      <div class="accordion__content">
+                        <p>Terry, interlock, ponte knit, biflex and jersey are only some of the knit fabrics available nowadays in fabric stores. Each fabric has its individual properties and use. In our blog will help you to understand better the differents types of knit.</p>
+                        <p>When choosing the fabric for the future garment you have to take into consideration the ease of the pattern. The ease may be positive or negative. For the patterns with a negative ease you will need a well stretchy material. The stretch factor will help you to choose the right fabric, even if you shop online</p>
+                        <p>The stretch factor is the ratio between the length of the stretched material to the length when the material is not stretched. Less stretchy materials will have the stretch factor closer to 1, for more stretchy fabrics the stretch factor will be decreasing.</p>
+                        <p>In the instructions to we provide recommendations for fabric selection, including the specification of the fabric’s stretch factor.</p>
+                      </div>
+                    </li>
+                    <li class="accordion__item">
+                      <label class="accordion__button">
+                        <h3 class="accordion__subtitle">I do not have a right frame on the sheets</h3>
+                        <input class="accordion__checkbox" type="checkbox"/>
+                        <svg class="icon _size_sm">
+                          <use xlink:href="assets/icons/default/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </label>
+                      <div class="accordion__content">
+                        <p>When choosing the fabric for the future garment you have to take into consideration the ease of the pattern. The ease may be positive or negative. For the patterns with a negative ease you will need a well stretchy material. The stretch factor will help you to choose the right fabric, even if you shop online</p>
+                        <p>The stretch factor is the ratio between the length of the stretched material to the length when the material is not stretched. Less stretchy materials will have the stretch factor closer to 1, for more stretchy fabrics the stretch factor will be decreasing.</p>
+                        <p>In the instructions to we provide recommendations for fabric selection, including the specification of the fabric’s stretch factor.</p>
+                      </div>
+                    </li>
+                    <li class="accordion__item">
+                      <label class="accordion__button">
+                        <h3 class="accordion__subtitle">Is it possible to order a template created for me by photo or picture?</h3>
+                        <input class="accordion__checkbox" type="checkbox"/>
+                        <svg class="icon _size_sm">
+                          <use xlink:href="assets/icons/default/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </label>
+                      <div class="accordion__content">
+                        <p>The stretch factor is the ratio between the length of the stretched material to the length when the material is not stretched. Less stretchy materials will have the stretch factor closer to 1, for more stretchy fabrics the stretch factor will be decreasing.</p>
+                        <p>In the instructions to we provide recommendations for fabric selection, including the specification of the fabric’s stretch factor.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__layout">
+        <div class="footer__container">
+          <div class="container">
+            <div class="footer__subscribe">
+              <form class="footer__subscribe-form">
+                <div class="input footer__input">
+                  <input class="input__field" type="text" placeholder="E-mail" data-mask="email"/>
+                </div>
+                <button class="button _size_sm _theme_black" type="button"><span class="button__text">Subscribe</span>
+                </button>
+              </form><span class="footer__subscribe-text">By clicking the Subscribe button, I consent to the processing of my personal data in accordance with the privacy policy</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer__container">
+          <div class="container">
+            <div class="footer__content">
+              <div class="footer__info">
+                <svg class="icon _type_logo">
+                  <use xlink:href="assets/icons/default/sprite.svg#logo"></use>
+                </svg>
+                <nav class="footer__nav">
+                  <div class="footer__col"><span class="footer__links-title">Online Shop</span>
+                    <div class="footer__links"><a class="footer__link" href="javascript:">Patterns</a><a class="footer__link" href="javascript:">Video tutorials</a><a class="footer__link" href="javascript:">Payment</a><a class="footer__link" href="javascript:">FAQ</a></div>
+                  </div>
+                  <div class="footer__col"><span class="footer__links-title">Company</span>
+                    <div class="footer__links"><a class="footer__link" href="javascript:">Blog</a><a class="footer__link" href="javascript:">About us</a><a class="footer__link" href="javascript:">Contacts</a><a class="footer__link" href="javascript:">Feedback</a></div>
+                  </div>
+                  <div class="footer__col"><span class="footer__links-title">Contacts</span>
+                    <div class="footer__links"><a class="footer__link" href="mailto: info@en-grasser.com">info@en-grasser.com</a>
+                      <div class="row-flex _gap_md _center"><a href="javascript:">
+                          <svg class="icon _size_sm">
+                            <use xlink:href="assets/icons/default/sprite.svg#insta"></use>
+                          </svg></a><a href="javascript:">
+                          <svg class="icon _size_sm">
+                            <use xlink:href="assets/icons/default/sprite.svg#youtube"></use>
+                          </svg></a><a href="javascript:">
+                          <svg class="icon _size_sm">
+                            <use xlink:href="assets/icons/default/sprite.svg#pint"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="footer__col _mob-width_full"><span class="footer__links-title">Payments</span>
+                    <div class="row-flex _gap_md _center">
+                      <svg class="icon _max-size-sm">
+                        <use xlink:href="assets/icons/default/sprite.svg#mastercard"></use>
+                      </svg>
+                      <svg class="icon _max-size-md">
+                        <use xlink:href="assets/icons/default/sprite.svg#paypal"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="footer__col">
+                    <div class="footer__links-title _margin_none">
+                      <svg class="icon _size_sm">
+                        <use xlink:href="assets/icons/default/sprite.svg#lang"></use>
+                      </svg>EN
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="footer__bottom"><span class="footer__ps">© 2014-2022 Grasser.ru</span>
+                <div class="footer__bottom-links"><a class="footer__link" href="javascript:">Privacy police</a><a class="footer__link" href="javascript:">Terms of personal use</a><a class="footer__link" href="javascript:">Sitemap</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="../vendors/imask/imask.min.js"></script>
+    <script src="../vendors/noUiSlider/nouislider.min.js"></script>
+    <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="../vendors/bootstrap-modal/bootstrap-modal.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,660 @@
+
+<html lang="ru">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../vendors/noUiSlider/nouislider.min.css"/>
+  <link rel="stylesheet" href="../vendors/swiper/swiper-bundle.css"/>
+  <link rel="stylesheet" href="vendors/bootstrap-modal/bootstrap-modal.min.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+  <title>Pattern
+  </title>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <svg class="icon _type_logo">
+            <use xlink:href="assets/icons/default/sprite.svg#logo"></use>
+          </svg>
+          <div class="header__top-items"><a class="header__button _tab-flex" href="javascript:">
+              <svg class="icon _theme_grey _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#search"></use>
+              </svg></a><a class="header__button _tab-hidden" href="javascript:">
+              <svg class="icon _theme_grey _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#word"></use>
+              </svg><span class="header__nav-title">RU</span></a>
+            <button class="header__button _tab-hidden">
+              <svg class="icon _theme_grey _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#email"></use>
+              </svg><span class="header__nav-title">Contact us</span>
+            </button>
+            <div class="header__button-container">
+              <div class="header__icon-container">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#account"></use>
+                </svg>
+              </div><a class="header__button" data-bs-toggle="modal" data-bs-target="#login">
+                <div class="row-col"><span class="header__nav-title _tab-hidden">Login</span></div></a><span class="header__nav-split">/</span><a class="header__button" data-bs-toggle="modal" data-bs-target="#Register">
+                <div class="row-col"><span class="header__nav-title _tab-hidden">Register</span></div></a>
+            </div><a class="header__button" href="javascript:">
+              <div class="header__icon-container">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#shop"></use>
+                </svg>
+              </div>
+              <div class="row-col"><span class="header__nav-title _tab-hidden">Cart</span></div></a>
+            <button class="header__burger _tab-flex">
+              <svg class="icon _theme_grey _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="header__content">
+          <div class="header__menu">
+            <svg class="icon _theme_grey _size_sm header__close-icon">
+              <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+            </svg>
+            <nav class="header__nav"><a class="header__nav-title" href="javascript:">Patterns</a><a class="header__nav-title" href="javascript:">Video tutorials</a><a class="header__nav-title" href="javascript:">Blog</a><a class="header__nav-title" href="javascript:">Feedback</a><a class="header__nav-title" href="javascript:">FAQ</a><a class="header__nav-title" href="javascript:">About us</a><a class="header__nav-title" href="javascript:">Contacts</a></nav>
+            <div class="header__menu-links _tab-flex"><a class="header__button _type_mob-menu" href="javascript:">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#account"></use>
+                </svg><span class="header__nav-title">Login / register</span></a><a class="header__button _type_mob-menu" href="javascript:">
+                <div class="header__icon-container">
+                  <svg class="icon _theme_grey _size_sm">
+                    <use xlink:href="assets/icons/default/sprite.svg#shop"></use>
+                  </svg>
+                </div>
+                <div class="row-col"><span class="header__nav-title">Cart</span></div></a>
+              <button class="header__button _type_mob-menu" type="button">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#email"></use>
+                </svg>
+                <div class="header__nav-title">Contact us</div>
+              </button><a class="header__button _type_mob-menu" href="javascript:">
+                <svg class="icon _theme_grey _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#word"></use>
+                </svg><span class="header__nav-title">RU</span></a>
+            </div>
+          </div>
+          <form class="input _type_search header__search _tab-hidden">
+            <div class="input__field">
+              <button class="input__search-button" type="button">
+                <svg class="icon _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <input class="input__field-input" type="text" placeholder="What do you search"/>
+              <button class="input__cross-button" type="button">
+                <svg class="icon _size_sm">
+                  <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="input__submit-button" type="button">
+              <svg class="icon _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#arrow-right-white"></use>
+              </svg>
+            </button>
+            <div class="input__dropdown"><a class="input__result" href="#">Patterns of women’s pinafores</a><a class="input__result" href="#">Plus size sewing patterns</a><a class="input__result" href="#">All patterns</a><a class="input__result" href="#">Patterns</a><a class="input__result" href="#">Clothing sewing patterns</a><a class="input__result" href="#">Free patterns</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="modal fade" tabindex="-1" id="Register">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><span class="modal-title">Register</span>
+            <button class="modal-close-btn" data-bs-dismiss="modal">
+              <svg class="icon _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-form">
+              <div class="input">
+                <label class="input__label">Name*</label>
+                <input class="input__field" type="Text" placeholder="" data-mask="text" required="required"/>
+              </div>
+              <div class="input">
+                <label class="input__label">Surname*</label>
+                <input class="input__field" type="Text" placeholder="" data-mask="text" required="required"/>
+              </div>
+              <div class="input">
+                <label class="input__label">Day of birth*</label>
+                <input class="input__field" type="text" data-mask="date" required="required"/>
+              </div>
+              <div class="input">
+                <label class="input__label">E-mail</label>
+                <input class="input__field" type="text" placeholder="" data-mask="email" required="required"/>
+              </div>
+              <div class="input" data-type="password">
+                <div class="input__top">
+                  <label class="input__label">Password*</label>
+                </div>
+                <div class="input__field">
+                  <input class="input__field-input" type="password" placeholder="Password" required="required"/>
+                  <button class="input__password-toggler" type="button">
+                    <svg class="icon _size_sm input__password-icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#password-unlock"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="input" data-type="password">
+                <div class="input__top">
+                  <label class="input__label">Repeat password*</label>
+                </div>
+                <div class="input__field">
+                  <input class="input__field-input" type="password" placeholder="Password" required="required"/>
+                  <button class="input__password-toggler" type="button">
+                    <svg class="icon _size_sm input__password-icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#password-unlock"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="register checkbox" id="regCheckbox" value="register checkbox"/>
+                <label for="regCheckbox">I want to receive the newsletter</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="button _theme_black modal-footer-button" type="button"><span class="button__text">Register</span>
+            </button><span class="modal-footer-subtext">By creating an account, you agree to Conditions of Use and Privacy Policy.</span><span class="modal-footer-text">Already have an account?<a href="javascipt:" data-bs-toggle="modal" data-bs-target="#login">Log in.</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="login">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><span class="modal-title">log in</span>
+            <button class="modal-close-btn" data-bs-dismiss="modal">
+              <svg class="icon _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-form">
+              <div class="input">
+                <label class="input__label">Login*</label>
+                <input class="input__field" type="Text" placeholder="" required="required"/>
+              </div>
+              <div class="input" data-type="password">
+                <div class="input__top">
+                  <label class="input__label">Password*</label><span class="input__link" href="javascript:" data-bs-toggle="modal" data-bs-target="#Forgot-password">Forgot password?</span>
+                </div>
+                <div class="input__field">
+                  <input class="input__field-input" type="password" placeholder="Password" required="required"/>
+                  <button class="input__password-toggler" type="button">
+                    <svg class="icon _size_sm input__password-icon">
+                      <use xlink:href="assets/icons/default/sprite.svg#password-unlock"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="button _theme_black modal-footer-button" type="button"><span class="button__text">Log in</span>
+            </button><span class="modal-footer-text">Don’t have an account?<a href="javascipt:" data-bs-toggle="modal" data-bs-target="#Register">Register</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="Forgot-password">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><span class="modal-title">Forgot password?</span>
+            <button class="modal-close-btn" data-bs-dismiss="modal">
+              <svg class="icon _size_sm">
+                <use xlink:href="assets/icons/default/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-form">
+              <div class="input">
+                <label class="input__label">E-mail</label>
+                <input class="input__field" type="text" placeholder="" data-mask="email" required="required"/>
+              </div><span class="modal-subtext">The password will be sent to your email</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="button _theme_black modal-footer-button" type="button"><span class="button__text">Send</span>
+            </button><span class="modal-footer-text">I remember password.<a href="javascipt:" data-bs-toggle="modal" data-bs-target="#login">Log in.</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="container">
+        <div class="section _padding-top_md _padding-bottom_md">
+          <div class="s-pattern">
+            <nav class="breadcrumbs"><a class="breadcrumbs__link" href="#"><span>Page name</span>
+                <svg class="icon breadcrumbs__icon">
+                  <use xlink:href="assets/icons/default/sprite.svg#arrow-right"></use>
+                </svg></a><a class="breadcrumbs__link" href="#"><span>Page name</span>
+                <svg class="icon breadcrumbs__icon">
+                  <use xlink:href="assets/icons/default/sprite.svg#arrow-right"></use>
+                </svg></a><a class="breadcrumbs__link active" href="#">Page name</a>
+            </nav>
+            <div class="s-pattern__container">
+              <div class="s-pattern__col">
+                <div class="s-pattern__gallery"> 
+                  <div class="s-pattern__gallery-thumbs swiper">
+                    <div class="swiper-wrapper"> 
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide swiper-slide-video"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                    </div>
+                    <div class="s-pattern__nav">
+                      <div class="s-pattern__nav-arrow s-pattern__nav-arrow-next"></div>
+                      <div class="s-pattern__nav-arrow s-pattern__nav-arrow-prev"></div>
+                    </div>
+                  </div>
+                  <div class="s-pattern__gallery-main swiper">
+                    <div class="swiper-wrapper"> 
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide">
+                        <iframe src="https://www.youtube.com/embed/zBdNiT52Lz8" frameborder="0" allowfullscreen="allowfullscreen" iframe-video="iframe-video"></iframe>
+                      </div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                      <div class="swiper-slide"><img src="assets/media/card-tutorial-2.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-pattern__take-together"> 
+                  <h3>Take together:</h3>
+                  <div class="s-pattern__cards">
+                    <div class="s-pattern__card"><img src="assets/media/card-tutorial-2.jpg"/>
+                      <div class="s-pattern__card-info"> 
+                        <div class="checkbox s-pattern__checkbox">
+                          <input type="checkbox" name="checkbox" id="master-checkbox-1" value="checkbox" checked="checked"/>
+                          <label for="master-checkbox-1">Video tutorial. How to sew a backpack by using the pattern №1000</label>
+                        </div>
+                        <p>500$<span>750$</span></p>
+                      </div>
+                    </div>
+                    <div class="s-pattern__card"><img src="assets/media/card-tutorial-2.jpg"/>
+                      <div class="s-pattern__card-info"> 
+                        <div class="checkbox s-pattern__checkbox">
+                          <input type="checkbox" name="checkbox" id="master-checkbox-2" value="checkbox" checked="checked"/>
+                          <label for="master-checkbox-2">Video tutorial. How to sew a backpack by using the pattern №1000</label>
+                        </div>
+                        <p>500$<span>750$</span></p>
+                      </div>
+                    </div>
+                    <div class="s-pattern__card"><img src="assets/media/card-tutorial-2.jpg"/>
+                      <div class="s-pattern__card-info"> 
+                        <div class="checkbox s-pattern__checkbox">
+                          <input type="checkbox" name="checkbox" id="master-checkbox-3" value="checkbox" checked="checked"/>
+                          <label for="master-checkbox-3">Video tutorial. How to sew a backpack by using the pattern №1000</label>
+                        </div>
+                        <p>500$<span>750$</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="s-pattern__total-wrapper">
+                    <div class="s-pattern__subtotal">
+                      <p class="s-pattern__subtitle">Subtotal:</p>
+                      <p class="s-pattern__total">519$<span>785$</span></p>
+                    </div>
+                    <button class="button _theme_black s-pattern__total-button" type="button"><span class="button__text">Add to cart</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="s-pattern__col">
+                <div class="s-pattern__heading"> 
+                  <h1>Hoodie, pattern №1092</h1>
+                  <div class="s-pattern__controls">
+                    <button class="s-pattern__share-button">
+                      <svg class="icon _size_sm button-share__icon">
+                        <use xlink:href="assets/icons/default/sprite.svg#share-button"></use>
+                      </svg>
+                    </button>
+                    <button class="like" type="button"></button>
+                  </div>
+                </div>
+                <div class="s-pattern__labels">
+                  <div class="label _size_lg _type_default s-pattern__label">For beginners</div>
+                  <div class="label _size_lg _type_default s-pattern__label">Plotter 600</div>
+                  <div class="label _size_lg _type_default s-pattern__label">With instruction</div>
+                </div>
+                <div class="s-pattern__mobile-gallery"></div>
+                <div class="s-pattern__radio-area"> 
+                  <h3>Size: </h3>
+                  <div class="radio-area">
+                    <label class="radio-area__item">38
+                      <input class="radio-area__input" type="radio" name="sizes" disabled="disabled"/>
+                    </label>
+                    <label class="radio-area__item">40
+                      <input class="radio-area__input" type="radio" name="sizes" disabled="disabled"/>
+                    </label>
+                    <label class="radio-area__item">42
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                    <label class="radio-area__item">46
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                    <label class="radio-area__item">48
+                      <input class="radio-area__input" type="radio" name="sizes" checked="checked"/>
+                    </label>
+                    <label class="radio-area__item">50
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                    <label class="radio-area__item">52
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                    <label class="radio-area__item">54
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                    <label class="radio-area__item">56
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                    <label class="radio-area__item">58
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                    <label class="radio-area__item">60
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                    <label class="radio-area__item">62
+                      <input class="radio-area__input" type="radio" name="sizes"/>
+                    </label>
+                  </div>
+                </div>
+                <div class="s-pattern__radio-area"> 
+                  <h3>Height: </h3>
+                  <div class="radio-area">
+                    <label class="radio-area__item">152-158
+                      <input class="radio-area__input" type="radio" name="height"/>
+                    </label>
+                    <label class="radio-area__item">158-164
+                      <input class="radio-area__input" type="radio" name="height"/>
+                    </label>
+                    <label class="radio-area__item">164-170
+                      <input class="radio-area__input" type="radio" name="height"/>
+                    </label>
+                    <label class="radio-area__item">170-176
+                      <input class="radio-area__input" type="radio" name="height"/>
+                    </label>
+                    <label class="radio-area__item">176-182
+                      <input class="radio-area__input" type="radio" name="height" checked="checked"/>
+                    </label>
+                  </div>
+                </div>
+                <div class="s-pattern__purchased"> 
+                  <svg class="icon _size_sm">
+                    <use xlink:href="assets/icons/default/sprite.svg#alert"></use>
+                  </svg>
+                  <p>The pattern was already purchased in these parameters:</p>
+                  <ul class="s-pattern__purchased-labels">
+                    <li class="s-pattern__purchased-label">42, 152-158</li>
+                    <li class="s-pattern__purchased-label">44, 152–158</li>
+                    <li class="s-pattern__purchased-label">44, 152–158</li>
+                  </ul><a class="s-pattern__purchased-link" href="#">Go to my patterns</a>
+                </div>
+                <div class="s-pattern__price">500$<span>750$</span></div>
+                <button class="button _theme_black _width_full s-pattern__to-cart-button" type="button"><span class="button__text">Add to cart</span>
+                </button>
+                <div class="s-pattern__note">
+                  <p>After payment, links for downloads of patterns are sent to your e-mail. For registered users download links are also available in personal account in the section "My Orders".</p>
+                  <div class="s-pattern__note-buttons"> 
+                    <button class="button s-pattern__note-button" type="button">
+                      <svg class="icon _size_sm button__icon-pin">
+                        <use xlink:href="assets/icons/default/sprite.svg#question-mark"></use>
+                      </svg><span class="button__text">How to buy a pattern</span>
+                    </button>
+                    <button class="button s-pattern__note-button" type="button">
+                      <svg class="icon _size_sm button__icon-pin">
+                        <use xlink:href="assets/icons/default/sprite.svg#question-mark"></use>
+                      </svg><span class="button__text">How to print a pattern</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="s-pattern__tabs"><a class="s-pattern__tab">
+                    <p>Info</p></a><a class="s-pattern__tab _status_active">
+                    <p>Comments <span>3</span></p></a><a class="s-pattern__tab">
+                    <p>Questions<span>0 </span></p></a></div>
+                <button class="s-pattern__button-tab">Info</button>
+                <div class="s-pattern__mobile-tab"></div>
+                <button class="s-pattern__button-tab _status_active">Comments 3</button>
+                <div class="s-pattern__mobile-tab"></div>
+                <button class="s-pattern__button-tab">Questions 0</button>
+                <div class="s-pattern__mobile-tab"></div>
+                <div class="section__comments-container s-pattern__comments">
+                  <div class="button-comment"><span class="button-comment__text">
+                      <button href="javascript:" data-bs-toggle="modal" data-bs-target="#login">Login</button>or
+                      <button href="javascript:" data-bs-toggle="modal" data-bs-target="#Register">register</button>to add your comment</span></div>
+                  <div class="section__comments">
+                    <div class="comment">
+                      <div class="comment__avatar"><img src="assets/media/avatar.jpg" alt=""/></div>
+                      <div class="comment__content">
+                        <div class="comment__top"><span class="comment__username">Username</span><span class="comment__date">24 march 2024</span></div><span class="comment__text">Hello, I love your pattern 790,791; I just finished the costume ; It was a great joy to sew with your instructions, therefor i am looking forward to start my next purchased pattern. Fitting was amazing, I think it is because of your different length choice, only a little adjustment I had to execute. Thank s so much for the professional pattern. One question: How can I add an image of the costume to your blog? Best Bettina</span>
+                        <div class="comment__answer">
+                          <div class="comment__top _type_admin"><span class="comment__username">Admin</span><span class="comment__date">24 march 2024</span></div>
+                          <div class="comment__text">Administration’s answer</div>
+                        </div>
+                        <button class="comment__button"><span class="comment__button-text">Show answer</span>
+                          <svg class="icon _size_xxs">
+                            <use xlink:href="assets/icons/default/sprite.svg#arrow-bottom"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <div class="comment__avatar"><img src="assets/media/avatar.jpg" alt=""/></div>
+                      <div class="comment__content">
+                        <div class="comment__top"><span class="comment__username">Username</span><span class="comment__date">24 march 2024</span></div><span class="comment__text">I bought 316 and 142 I wish there was A tutorial in video would be of great help for beginners BTW amazing patterns :)</span>
+                        <div class="swiper comment__swiper">
+                          <div class="swiper-wrapper comment__swiper-wrapper">
+                            <div class="swiper-slide comment__swiper-slide"><img class="comment__image" src="assets/media/comment1.jpg" alt=""/></div>
+                            <div class="swiper-slide comment__swiper-slide"><img class="comment__image" src="assets/media/comment4.jpg" alt=""/></div>
+                            <div class="swiper-slide comment__swiper-slide"><img class="comment__image" src="assets/media/comment2.jpg" alt=""/></div>
+                            <div class="swiper-slide comment__swiper-slide"><img class="comment__image" src="assets/media/comment2.jpg" alt=""/></div>
+                            <div class="swiper-slide comment__swiper-slide"><img class="comment__image" src="assets/media/comment2.jpg" alt=""/></div>
+                            <div class="swiper-slide comment__swiper-slide"><img class="comment__image" src="assets/media/comment2.jpg" alt=""/></div>
+                            <div class="swiper-slide comment__swiper-slide"><img class="comment__image" src="assets/media/comment2.jpg" alt=""/></div>
+                            <div class="swiper-slide comment__swiper-slide"><img class="comment__image" src="assets/media/comment4.jpg" alt=""/></div>
+                          </div>
+                        </div>
+                        <div class="comment__answer">
+                          <div class="comment__top _type_admin"><span class="comment__username">Admin</span><span class="comment__date">24 march 2024</span></div>
+                          <div class="comment__text">Administration’s answer</div>
+                        </div>
+                        <button class="comment__button"><span class="comment__button-text">Show answer</span>
+                          <svg class="icon _size_xxs">
+                            <use xlink:href="assets/icons/default/sprite.svg#arrow-bottom"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <div class="comment__avatar"><img src="assets/media/avatar.jpg" alt=""/></div>
+                      <div class="comment__content">
+                        <div class="comment__top"><span class="comment__username">Username</span><span class="comment__date">24 march 2024</span></div><a class="comment__target" href="javascript:">Hoodie, pattern №1092</a><span class="comment__text">Hi, do you plan on offering the Letter printing option soon?</span>
+                        <div class="comment__answer">
+                          <div class="comment__top _type_admin"><span class="comment__username">Admin</span><span class="comment__date">24 march 2024</span></div>
+                          <div class="comment__text">Administration’s answer</div>
+                        </div>
+                        <button class="comment__button"><span class="comment__button-text">Show answer</span>
+                          <svg class="icon _size_xxs">
+                            <use xlink:href="assets/icons/default/sprite.svg#arrow-bottom"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="button _size_lg _theme_grey _width_full" type="button"><span class="button__text">More comments</span>
+                  </button>
+                </div>
+                <p class="s-pattern__copyright">
+                   All documents, multimedia and texts posted on www.en-grasser.com are the intellectual property of 
+                  GRASSER LLC. Patterns and master classes are provided to buyers for personal use. 
+                  Resale of patterns and master classes is prohibited. Public offering of our products and links to their 
+                  downloading - on the Internet, social networks and in the media - is a violation and carries a penalty 
+                  in accordance to applicable law.
+                </p>
+              </div>
+            </div>
+            <div class="s-pattern__laptop-wrapper"></div>
+            <h2>WILL FIT THIS PATTERN</h2>
+            <div class="s-video-tutorials__slider-wrapper">
+              <div class="s-video-tutorials__arrows">
+                <div class="s-video-tutorials-arrow s-video-tutorials-arrow-prev"></div>
+                <div class="s-video-tutorials-arrow s-video-tutorials-arrow-next"></div>
+              </div>
+              <div class="s-video-tutorials__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> 
+                    <div class="card-tutorial s-video-tutorials__card">
+                      <div class="image card-tutorial__image"><img src="assets/media/card-tutorial.jpg" alt=""/>
+                      </div><span class="card-tutorial__description">Master class No. 34. Sewing a bikini swimsuit using patterns No. 477 and No. 478</span><span class="card-tutorial__price">500$</span>
+                      <div class="card-tutorial__bottom">
+                        <button class="button _theme_black _size_sm " type="button" data-bs-toggle="modal" data-bs-target="#Item-added-to-cart"><span class="button__text">Add to cart</span>
+                        </button>
+                        <button class="like" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="card-tutorial s-video-tutorials__card">
+                      <div class="image card-tutorial__image"><img src="assets/media/card-tutorial.jpg" alt=""/>
+                      </div><span class="card-tutorial__description">Master class No. 34. Sewing a bikini swimsuit using patterns No. 477 and No. 478</span><span class="card-tutorial__price">500$</span>
+                      <div class="card-tutorial__bottom">
+                        <button class="button _theme_black _size_sm " type="button" data-bs-toggle="modal" data-bs-target="#Item-added-to-cart"><span class="button__text">Add to cart</span>
+                        </button>
+                        <button class="like" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="card-tutorial s-video-tutorials__card">
+                      <div class="image card-tutorial__image"><img src="assets/media/card-tutorial.jpg" alt=""/>
+                      </div><span class="card-tutorial__description">Master class No. 34. Sewing a bikini swimsuit using patterns No. 477 and No. 478</span><span class="card-tutorial__price">500$</span>
+                      <div class="card-tutorial__bottom">
+                        <button class="button _theme_black _size_sm " type="button" data-bs-toggle="modal" data-bs-target="#Item-added-to-cart"><span class="button__text">Add to cart</span>
+                        </button>
+                        <button class="like" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="card-tutorial s-video-tutorials__card">
+                      <div class="image card-tutorial__image"><img src="assets/media/card-tutorial.jpg" alt=""/>
+                      </div><span class="card-tutorial__description">Master class No. 34. Sewing a bikini swimsuit using patterns No. 477 and No. 478</span><span class="card-tutorial__price">500$</span>
+                      <div class="card-tutorial__bottom">
+                        <button class="button _theme_black _size_sm " type="button" data-bs-toggle="modal" data-bs-target="#Item-added-to-cart"><span class="button__text">Add to cart</span>
+                        </button>
+                        <button class="like" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="card-tutorial s-video-tutorials__card">
+                      <div class="image card-tutorial__image"><img src="assets/media/card-tutorial.jpg" alt=""/>
+                      </div><span class="card-tutorial__description">Master class No. 34. Sewing a bikini swimsuit using patterns No. 477 and No. 478</span><span class="card-tutorial__price">500$</span>
+                      <div class="card-tutorial__bottom">
+                        <button class="button _theme_black _size_sm " type="button" data-bs-toggle="modal" data-bs-target="#Item-added-to-cart"><span class="button__text">Add to cart</span>
+                        </button>
+                        <button class="like" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__layout">
+        <div class="footer__container">
+          <div class="container">
+            <div class="footer__subscribe">
+              <form class="footer__subscribe-form">
+                <div class="input footer__input">
+                  <input class="input__field" type="text" placeholder="E-mail" data-mask="email"/>
+                </div>
+                <button class="button _size_sm _theme_black" type="button"><span class="button__text">Subscribe</span>
+                </button>
+              </form><span class="footer__subscribe-text">By clicking the Subscribe button, I consent to the processing of my personal data in accordance with the privacy policy</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer__container">
+          <div class="container">
+            <div class="footer__content">
+              <div class="footer__info">
+                <svg class="icon _type_logo">
+                  <use xlink:href="assets/icons/default/sprite.svg#logo"></use>
+                </svg>
+                <nav class="footer__nav">
+                  <div class="footer__col"><span class="footer__links-title">Online Shop</span>
+                    <div class="footer__links"><a class="footer__link" href="javascript:">Patterns</a><a class="footer__link" href="javascript:">Video tutorials</a><a class="footer__link" href="javascript:">Payment</a><a class="footer__link" href="javascript:">FAQ</a></div>
+                  </div>
+                  <div class="footer__col"><span class="footer__links-title">Company</span>
+                    <div class="footer__links"><a class="footer__link" href="javascript:">Blog</a><a class="footer__link" href="javascript:">About us</a><a class="footer__link" href="javascript:">Contacts</a><a class="footer__link" href="javascript:">Feedback</a></div>
+                  </div>
+                  <div class="footer__col"><span class="footer__links-title">Contacts</span>
+                    <div class="footer__links"><a class="footer__link" href="mailto: info@en-grasser.com">info@en-grasser.com</a>
+                      <div class="row-flex _gap_md _center"><a href="javascript:">
+                          <svg class="icon _size_sm">
+                            <use xlink:href="assets/icons/default/sprite.svg#insta"></use>
+                          </svg></a><a href="javascript:">
+                          <svg class="icon _size_sm">
+                            <use xlink:href="assets/icons/default/sprite.svg#youtube"></use>
+                          </svg></a><a href="javascript:">
+                          <svg class="icon _size_sm">
+                            <use xlink:href="assets/icons/default/sprite.svg#pint"></use>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                  <div class="footer__col _mob-width_full"><span class="footer__links-title">Payments</span>
+                    <div class="row-flex _gap_md _center">
+                      <svg class="icon _max-size-sm">
+                        <use xlink:href="assets/icons/default/sprite.svg#mastercard"></use>
+                      </svg>
+                      <svg class="icon _max-size-md">
+                        <use xlink:href="assets/icons/default/sprite.svg#paypal"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="footer__col">
+                    <div class="footer__links-title _margin_none">
+                      <svg class="icon _size_sm">
+                        <use xlink:href="assets/icons/default/sprite.svg#lang"></use>
+                      </svg>EN
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="footer__bottom"><span class="footer__ps">© 2014-2022 Grasser.ru</span>
+                <div class="footer__bottom-links"><a class="footer__link" href="javascript:">Privacy police</a><a class="footer__link" href="javascript:">Terms of personal use</a><a class="footer__link" href="javascript:">Sitemap</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="../vendors/imask/imask.min.js"></script>
+    <script src="../vendors/noUiSlider/nouislider.min.js"></script>
+    <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="../vendors/bootstrap-modal/bootstrap-modal.bundle.min.js"></script>
+  </body>
+</html>
